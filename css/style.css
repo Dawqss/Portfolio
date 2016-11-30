@@ -227,6 +227,9 @@ header {
     top: 0; }
   #portfolio .flex > div:hover > div:last-of-type {
     bottom: 0; }
+  @media (max-width: 465px) {
+    #portfolio .flex > div {
+      width: 80%; } }
 
 #contact {
   margin-bottom: 90px; }
