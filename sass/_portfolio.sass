@@ -1,5 +1,65 @@
 #portfolio
+	margin-bottom: 90px
 	.container
 		text-align: center
-	p:first-of-type
-		@extend .p_extend
+		>p:first-of-type
+			@extend .p_extend
+	.flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+	.flex>div
+		position: relative
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+		width: 45%
+		margin: 15px 15px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			display: block
+		>div:first-of-type
+			background-color: rgba(46,204,197, 0.7)
+			border-radius: 0 0 15px 15px
+			color: white
+			font-family: 'Oswald'
+			text-transform: uppercase
+			transition-duration: 0.5s
+			position: absolute
+			top: -70px
+			left: 0
+			right: 0
+		>div:last-of-type
+			transition-duration: 500ms
+			position: absolute
+			bottom: -70px
+			left: 0
+			right: 0
+			button:first-of-type
+				border-right: 0.5px solid #ffffff
+			button:last-of-type
+				border-left: 0.5px solid #ffffff
+			button
+				transition-duration: 200ms
+				width: 50%
+				box-sizing: border-box
+				display: inline-block
+				float: left
+				background-color: rgba(46,204,197, 0.7)
+				border: none
+				&:hover
+					background-color: rgba(46,204,197, 1)
+
+				a
+					text-decoration: none
+					color: white
+					font-family: 'Oswald'
+					text-transform: uppercase
+					font-size: 1.4rem
+
+	.flex>div:hover
+		>div:first-of-type
+			top: 0
+		>div:last-of-type
+			bottom: 0

@@ -12,7 +12,7 @@ body {
   max-width: 980px;
   margin: 0 auto; }
 
-.p_extend, #aboutme .container > p:first-of-type, #skills p:first-of-type, #portfolio p:first-of-type {
+.p_extend, #aboutme .container > p:first-of-type, #skills .container p:first-of-type, #portfolio .container > p:first-of-type, #contact p:first-of-type {
   font-family: 'Oswald';
   text-transform: uppercase;
   text-align: center;
@@ -63,18 +63,20 @@ header {
     display: inline-block;
     border-radius: 0 0 15px 15px; }
     header ul li {
-      cursor: pointer;
-      color: #ffffff;
       display: inline-block;
       padding: 0 15px;
-      text-transform: uppercase;
-      transition: 0.2s;
-      -moz-transition: 0.2s;
-      -webkit-transition: 0.2s;
-      -o-transition: 0.2s;
       cursor: pointer; }
-      header ul li:hover {
-        color: #e74c3c; }
+      header ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        cursor: pointer; }
+        header ul li a:hover {
+          color: #e74c3c; }
   header nav, header #menu_button button {
     font-family: 'Oswald';
     font-size: 2rem;
@@ -141,9 +143,8 @@ header {
 
 #skills .container {
   text-align: center; }
-
-#skills p:first-of-type {
-  margin-bottom: 70px; }
+  #skills .container p:first-of-type {
+    margin-bottom: 70px; }
 
 #skills .flex {
   display: flex;
@@ -167,5 +168,96 @@ header {
   margin-bottom: 35px;
   color: #2c3e50; }
 
-#portfolio .container {
-  text-align: center; }
+#portfolio {
+  margin-bottom: 90px; }
+  #portfolio .container {
+    text-align: center; }
+  #portfolio .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  #portfolio .flex > div {
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    width: 45%;
+    margin: 15px 15px;
+    overflow: hidden; }
+    #portfolio .flex > div img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+    #portfolio .flex > div > div:first-of-type {
+      background-color: rgba(46, 204, 197, 0.7);
+      border-radius: 0 0 15px 15px;
+      color: white;
+      font-family: 'Oswald';
+      text-transform: uppercase;
+      transition-duration: 0.5s;
+      position: absolute;
+      top: -70px;
+      left: 0;
+      right: 0; }
+    #portfolio .flex > div > div:last-of-type {
+      transition-duration: 500ms;
+      position: absolute;
+      bottom: -70px;
+      left: 0;
+      right: 0; }
+      #portfolio .flex > div > div:last-of-type button:first-of-type {
+        border-right: 0.5px solid #ffffff; }
+      #portfolio .flex > div > div:last-of-type button:last-of-type {
+        border-left: 0.5px solid #ffffff; }
+      #portfolio .flex > div > div:last-of-type button {
+        transition-duration: 200ms;
+        width: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+        float: left;
+        background-color: rgba(46, 204, 197, 0.7);
+        border: none; }
+        #portfolio .flex > div > div:last-of-type button:hover {
+          background-color: #2eccc5; }
+        #portfolio .flex > div > div:last-of-type button a {
+          text-decoration: none;
+          color: white;
+          font-family: 'Oswald';
+          text-transform: uppercase;
+          font-size: 1.4rem; }
+  #portfolio .flex > div:hover > div:first-of-type {
+    top: 0; }
+  #portfolio .flex > div:hover > div:last-of-type {
+    bottom: 0; }
+
+#contact {
+  margin-bottom: 90px; }
+  #contact .container {
+    text-align: center; }
+  #contact p {
+    font-size: 2rem;
+    font-family: 'Lobster';
+    color: #50bcb7; }
+    #contact p a {
+      font-family: 'Oswald';
+      text-decoration: none;
+      color: #e74c3c; }
+  #contact button {
+    transition: 0.2s;
+    font-family: 'Oswald';
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer; }
+    #contact button:hover {
+      background-color: #de1500; }
+
+footer {
+  border-top: 2px solid #50bcb7;
+  text-align: center;
+  text-transform: uppercase; }
+  footer p {
+    color: #50bcb7;
+    font-size: 1.1rem;
+    font-family: 'Oswald'; }

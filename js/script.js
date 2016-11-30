@@ -1,3 +1,10 @@
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
 $(document).on("scroll",function(){
     if($(document).scrollTop()>100){
         $('nav').removeClass('visible').addClass('hidden');
