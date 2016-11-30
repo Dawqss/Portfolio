@@ -1,0 +1,24 @@
+{
+  "name": "dawid_wyrkowski_portfolio",
+  "version": "1.0.0",
+  "description": "first portfolio owned by Dawid Wyrkowski",
+  "main": "index.js",
+  "scripts": {
+    "test": "fortheemperor"
+  },
+  "keywords": [
+    "portfolio",
+    "Dawid",
+    "Wyrkowski",
+    "front",
+    "end"
+  ],
+  "author": "Dawid Wyrkowski",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

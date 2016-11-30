@@ -1,0 +1,103 @@
+header,nav, a, img, li, #menu_button
+	transition: all 1s
+	-moz-transition: all 1s
+	-webkit-transition: all 1s
+	-o-transition: all 1s
+
+.visible
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+
+.hidden
+	position: fixed
+	top: -77px
+	left: 0
+	right: 0
+
+.menu_button_hidden
+	position: fixed
+	top: -52px
+	right: 0
+	left: 0
+
+header
+	position: relative
+
+	nav, ul, li
+		text-align: center
+
+	img
+		width: 100%
+		opacity: 0.65
+		display: block
+		border-bottom: 4px solid #e74c3c
+
+	ul
+		list-style-type: none
+		padding: 15px 0
+		margin: 0
+		background-color: rgba(46,204,197,0.7)
+		display: inline-block
+		border-radius: 0 0 15px 15px
+		li
+			cursor: pointer
+			color: #ffffff
+			display: inline-block
+			padding: 0 15px
+			text-transform: uppercase
+			transition: 0.2s
+			-moz-transition: 0.2s
+			-webkit-transition: 0.2s
+			-o-transition: 0.2s
+			cursor: pointer
+			&:hover
+				color: #e74c3c
+
+	nav
+		font-family: 'Oswald'
+		font-size: 2rem
+		font-weight: bold
+		z-index: 2
+
+	#menu_button
+		z-index: 2
+		margin: 0 auto
+		text-align: center
+		button
+			@extend nav
+			border: none
+			color: white
+			background-color: rgba(46,204,197,0.7)
+			padding: 0 15px 5px
+			text-transform: uppercase
+			border-radius: 0 0 15px 15px
+			transition: 0.2s
+			-moz-transition: 0.2s
+			-webkit-transition: 0.2s
+			-o-transition: 0.2s
+			cursor: pointer
+			&:hover
+				color: #e74c3c
+
+	#name
+		max-width: 980px
+		padding: 5px
+		z-index: 1
+		position: absolute
+		top: 10%
+		left: calc(50% - 980px / 2)
+		text-align: center
+		font-size: 3.5rem
+		color: #e74c3c
+		text-shadow: 1px 1px black
+		p
+			font-family: 'Lobster'
+			font-weight: bold
+
+		h1
+			font-family: 'Alfa Slab One'
+			text-transform: uppercase
+			margin-bottom: 25px
+			letter-spacing: 5px
