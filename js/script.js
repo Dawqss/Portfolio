@@ -22,7 +22,14 @@ $(document).on("scroll",function(){
 			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
-    	}, 1200);
+    	}, 800);
+    } else if ($(document).scrollTop()>283 && $(window).width() <= 425) {
+    	setTimeout(function(){
+    		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
+    	}, 800);
     }
 });
 
