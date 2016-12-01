@@ -203,33 +203,30 @@ header {
       bottom: -70px;
       left: 0;
       right: 0; }
-      #portfolio .flex > div > div:last-of-type button:first-of-type {
+      #portfolio .flex > div > div:last-of-type a:first-of-type {
         border-right: 0.5px solid #ffffff; }
-      #portfolio .flex > div > div:last-of-type button:last-of-type {
+      #portfolio .flex > div > div:last-of-type a:last-of-type {
         border-left: 0.5px solid #ffffff; }
-      #portfolio .flex > div > div:last-of-type button {
+      #portfolio .flex > div > div:last-of-type a {
         transition-duration: 200ms;
         width: 50%;
         box-sizing: border-box;
         display: inline-block;
         float: left;
         background-color: rgba(46, 204, 197, 0.7);
-        border: none; }
-        #portfolio .flex > div > div:last-of-type button:hover {
+        border: none;
+        display: inline-block;
+        color: white;
+        font-family: 'Oswald';
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-decoration: none; }
+        #portfolio .flex > div > div:last-of-type a:hover {
           background-color: #2eccc5; }
-        #portfolio .flex > div > div:last-of-type button a {
-          text-decoration: none;
-          color: white;
-          font-family: 'Oswald';
-          text-transform: uppercase;
-          font-size: 1.4rem; }
   #portfolio .flex > div:hover > div:first-of-type {
     top: 0; }
   #portfolio .flex > div:hover > div:last-of-type {
     bottom: 0; }
-  @media (max-width: 465px) {
-    #portfolio .flex > div {
-      width: 80%; } }
 
 #contact {
   margin-bottom: 90px; }
