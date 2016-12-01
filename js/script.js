@@ -30,7 +30,7 @@ $(document).on("scroll",function(){
 			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
     	}, 800);
-    } else if ($(document).scrollTop()>180 && $(window).width() <= 320) {
+    } else if ($(document).scrollTop()>160 && $(window).width() <= 320) {
     	setTimeout(function(){
     		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
