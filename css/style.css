@@ -18,7 +18,8 @@ body {
   border-bottom: 2px solid;
   display: inline-block;
   color: #e74c3c;
-  text-shadow: 1px 1px black; }
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px #7b1910; }
 
 .col-6 {
   width: 50%; }
@@ -140,7 +141,7 @@ header {
 
 #aboutme .info {
   position: relative;
-  border-radius: 3px;
+  border-radius: 15px;
   color: #2c3e50;
   overflow: hidden;
   background-color: whitesmoke;
@@ -159,7 +160,7 @@ header {
     left: 0;
     right: 50%;
     bottom: 0;
-    background-color: #4fb8b3; }
+    background-color: #e74c3c; }
     #aboutme .info .left_door p {
       text-align: right; }
   #aboutme .info .right_door {
@@ -168,7 +169,7 @@ header {
     right: 0;
     left: 50%;
     bottom: 0;
-    background-color: #4fb8b3; }
+    background-color: #e74c3c; }
     #aboutme .info .right_door p {
       text-align: left; }
   #aboutme .info .left_door p, #aboutme .info .right_door p {
@@ -188,6 +189,8 @@ header {
     margin-bottom: 70px; }
 
 #skills .flex {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -199,15 +202,22 @@ header {
   text-align: center;
   transform: scale(0.8); }
 
+#skills .flex:last-of-type {
+  justify-content: center; }
+
 #skills .info {
   width: 75%;
   margin: 0 auto;
   font-family: helvetica;
   line-height: 200%;
   font-size: 2rem;
-  padding: 30px;
-  margin-bottom: 35px;
-  color: #2c3e50; }
+  padding: 5px;
+  margin-top: 60px;
+  margin-bottom: 95px;
+  color: #2c3e50;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.87);
+  font-weight: bold; }
 
 #portfolio {
   margin-bottom: 90px; }

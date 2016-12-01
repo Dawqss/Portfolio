@@ -18,10 +18,10 @@ $(document).on("scroll",function(){
     checkMenu();
     if($(document).scrollTop()>500){
     	setTimeout(function(){
-    		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 1000, easing: 'linear'});
-			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 1000, easing: 'linear'});
-			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 1000, easing: 'linear'});
-			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 1000, easing: 'linear'});
+    		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
     	}, 1200);
     }
 });
