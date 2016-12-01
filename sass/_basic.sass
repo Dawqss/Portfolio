@@ -3,9 +3,7 @@
 
 body
 	margin: 0 auto
-	background: #4ECDC4
-	background: -webkit-linear-gradient(#4ECDC4 , #556270)
-	background: linear-gradient(#4ECDC4 , #556270)
+	background-image: url("img/pattern1.png"), linear-gradient(#4ECDC4 , #556270)
 
 .container
 	max-width: 980px
@@ -15,8 +13,17 @@ body
 	font-family: 'Oswald'
 	text-transform: uppercase
 	text-align: center
-	font-size: 3rem
+	font-size: 4rem
 	border-bottom: 2px solid 
 	display: inline-block
 	color: #e74c3c
 	text-shadow: 1px 1px black
+
+.col-6
+	width: 50%
+.col-12
+	width: 90%	
+
+html
+	@media (max-width: 985px) and (min-width: 426px)
+		font-size: 10px

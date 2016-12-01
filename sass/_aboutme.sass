@@ -6,17 +6,49 @@
 		padding: 0
 
 	.info
+		position: relative
 		border-radius: 3px
 		color: #2c3e50
 		overflow: hidden
-		p
+		background-color: whitesmoke
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+		>p
+			font-family: 'oswald'
 			width: 75%
 			margin: 0 auto
-			font-family: helvetica
-			line-height: 200%
+			line-height: 2.8
 			font-size: 1.3rem
-			padding: 30px
+			padding: 60px
 			margin-bottom: 35px
 
-		p:first-of-type
-			font-size: 2.6rem	
+		.left_door
+			position: absolute
+			top: 0
+			left: 0
+			right: 50%
+			bottom: 0
+			background-color: #4fb8b3
+			p
+				text-align: right
+
+		.right_door
+			position: absolute
+			top: 0
+			right: 0
+			left: 50%
+			bottom: 0
+			background-color: #4fb8b3
+			p
+				text-align: left
+
+		.left_door, .right_door
+			p
+				text-transform: uppercase
+				font-family: 'Oswald'
+				font-size: 20rem
+				font-weight: bold
+				padding: 0 
+				margin: 0
+				width: 100%
+				height: 100%
+				line-height: 170%

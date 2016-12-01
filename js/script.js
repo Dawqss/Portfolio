@@ -1,3 +1,7 @@
+$(window).ready(function() {
+	setTimeout(function(){$('#loading-screen').addClass('none');}, 1000);
+	});
+
 $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
@@ -12,6 +16,14 @@ $(document).on("scroll",function(){
         $('nav').removeClass('hidden').addClass('visible');
     }
     checkMenu();
+    if($(document).scrollTop()>500){
+    	setTimeout(function(){
+    		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 1000, easing: 'linear'});
+			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 1000, easing: 'linear'});
+			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 1000, easing: 'linear'});
+			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 1000, easing: 'linear'});
+    	}, 1200);
+    }
 });
 
 function checkMenu(){
@@ -28,3 +40,4 @@ $('#button_nav').click(function(){
 	$('#menu_button').removeClass('visible').addClass('menu_button_hidden');
 	$('nav').removeClass('hidden').addClass('visible');
 });
+

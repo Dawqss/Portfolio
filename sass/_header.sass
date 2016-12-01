@@ -21,6 +21,11 @@ header,nav, a, img, li, #menu_button
 	top: -52px
 	right: 0
 	left: 0
+	
+.gradient
+	background: -webkit-linear-gradient(45deg, #a92215, #e74c3d)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
 
 header
 	position: relative
@@ -30,9 +35,7 @@ header
 
 	img
 		width: 100%
-		opacity: 0.65
 		display: block
-		border-bottom: 4px solid #e74c3c
 
 	ul
 		list-style-type: none
@@ -84,16 +87,14 @@ header
 				color: #e74c3c
 
 	#name
-		max-width: 980px
 		padding: 5px
 		z-index: 1
 		position: absolute
 		top: 10%
-		left: calc(50% - 980px / 2)
+		left: 0
+		right: 0
 		text-align: center
 		font-size: 3.5rem
-		color: #e74c3c
-		text-shadow: 1px 1px black
 		p
 			font-family: 'Lobster'
 			font-weight: bold
@@ -103,3 +104,13 @@ header
 			text-transform: uppercase
 			margin-bottom: 25px
 			letter-spacing: 5px
+
+		.container-center
+			max-width: 980px
+			margin: 0 auto
+
+	@media (max-width: 985px) and (min-width: 426px)
+			nav
+				font-size: 
+
+	
