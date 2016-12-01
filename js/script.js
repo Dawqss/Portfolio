@@ -30,6 +30,13 @@ $(document).on("scroll",function(){
 			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
     	}, 800);
+    } else if ($(document).scrollTop()>213 && $(window).width() <= 320) {
+    	setTimeout(function(){
+    		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
+			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
+    	}, 800);
     }
 });
 

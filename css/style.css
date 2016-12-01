@@ -33,7 +33,9 @@ body {
 
 @media (max-width: 425px) {
   html {
-    font-size: 6px; } }
+    font-size: 5.5px; }
+    html .p_extend, html #aboutme .container > p:first-of-type, #aboutme html .container > p:first-of-type, html #skills .container p:first-of-type, #skills .container html p:first-of-type, html #portfolio .container > p:first-of-type, #portfolio html .container > p:first-of-type, html #contact p:first-of-type, #contact html p:first-of-type {
+      font-size: 6rem; } }
 
 header, nav, header #menu_button button, a, img, li, #menu_button {
   transition: all 1s;
@@ -136,9 +138,6 @@ header {
     header #name .container-center {
       max-width: 980px;
       margin: 0 auto; }
-  @media (max-width: 426px) {
-    header nav, header #menu_button button {
-      font-size: 3rem; } }
 
 #aboutme .container {
   text-align: center; }
@@ -190,6 +189,13 @@ header {
     height: 100%;
     line-height: 170%; }
 
+@media (max-width: 425px) {
+  #aboutme .info p {
+    padding: 20px;
+    margin-bottom: 15px; }
+  #aboutme .info .left_door p, #aboutme .info .right_door p {
+    line-height: 160%; } }
+
 #skills .container {
   text-align: center; }
   #skills .container p:first-of-type {
@@ -225,6 +231,18 @@ header {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.87);
   font-weight: bold; }
+
+@media (max-width: 425px) {
+  #skills .container p:first-of-type {
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  #skills .container .info {
+    margin-top: 10px;
+    margin-bottom: 35px; }
+  #skills .container .flex {
+    margin-bottom: 40px; }
+    #skills .container .flex > div {
+      width: 50%; } }
 
 #portfolio {
   margin-bottom: 90px; }
@@ -284,6 +302,11 @@ header {
     top: 0; }
   #portfolio .flex > div:hover > div:last-of-type {
     bottom: 0; }
+  @media (max-width: 425px) {
+    #portfolio .flex > div > div:first-of-type {
+      font-size: 2.5rem; }
+    #portfolio .flex > div > div:last-of-type a {
+      font-size: 5rem; } }
 
 #contact {
   margin-bottom: 90px; }
@@ -309,6 +332,15 @@ header {
     cursor: pointer; }
     #contact button:hover {
       background-color: #de1500; }
+  @media (max-width: 425px) {
+    #contact {
+      margin-bottom: 40px; }
+      #contact p {
+        font-size: 5rem; }
+      #contact p:last-of-type {
+        font-size: 6rem; }
+      #contact button {
+        font-size: 4rem; } }
 
 footer {
   border-top: 2px solid #50bcb7;
