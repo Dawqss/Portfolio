@@ -23,14 +23,14 @@ $(document).on("scroll",function(){
 			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
     	}, 800);
-    } else if ($(document).scrollTop()>263 && $(window).width() <= 425) {
+    } else if ($(document).scrollTop()>263 && $(window).width() <= 425 && $(window).width() > 320 ) {
     	setTimeout(function(){
     		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.right_door').animate({'right': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.right_door').animate({'left': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
     	}, 800);
-    } else if ($(document).scrollTop()>200 && $(window).width() <= 320) {
+    } else if ($(document).scrollTop()>180 && $(window).width() <= 320) {
     	setTimeout(function(){
     		$('.left_door').animate({'right': '+200%'}, {queue: false, duration: 800, easing: 'linear'});
 			$('.left_door').animate({'left': '-200%'}, {queue: false, duration: 800, easing: 'linear'});
