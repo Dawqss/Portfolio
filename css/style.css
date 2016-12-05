@@ -327,11 +327,13 @@ header {
     padding: 10px 20px;
     border-radius: 10px;
     background-color: #e74c3c;
-    color: #ffffff;
-    border: none;
-    cursor: pointer; }
+    border: none; }
     #contact button:hover {
       background-color: #de1500; }
+    #contact button a {
+      text-decoration: none;
+      color: #ffffff;
+      cursor: pointer; }
   @media (max-width: 425px) {
     #contact {
       margin-bottom: 40px; }
