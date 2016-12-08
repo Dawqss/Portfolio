@@ -33,7 +33,7 @@ body {
 
 @media (max-width: 425px) {
   html {
-    font-size: 6px; }
+    font-size: 5.5px; }
     html .p_extend, html #aboutme .container > p:first-of-type, #aboutme html .container > p:first-of-type, html #skills .container p:first-of-type, #skills .container html p:first-of-type, html #portfolio .container > p:first-of-type, #portfolio html .container > p:first-of-type, html #contact p:first-of-type, #contact html p:first-of-type {
       font-size: 6rem; } }
 
@@ -138,6 +138,9 @@ header {
     header #name .container-center {
       max-width: 980px;
       margin: 0 auto; }
+  @media (max-width: 425px) {
+    header #name h1 {
+      font-size: 1.8em; } }
 
 #aboutme .container {
   text-align: center; }
@@ -340,7 +343,8 @@ header {
     #contact p a {
       font-family: 'Oswald';
       text-decoration: none;
-      color: #e74c3c; }
+      color: #e74c3c;
+      text-shadow: 1px 1px #7b1910; }
   #contact button {
     transition: 0.2s;
     font-family: 'Oswald';
@@ -365,7 +369,7 @@ header {
       #contact button {
         font-size: 4rem; }
       #contact a:last-of-type {
-        font-size: 4.8rem; } }
+        font-size: 4.5rem; } }
 
 footer {
   border-top: 2px solid #50bcb7;
