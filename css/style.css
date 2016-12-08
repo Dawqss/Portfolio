@@ -4,7 +4,7 @@
 
 body {
   margin: 0 auto;
-  background-image: url("img/pattern1_05.png"), linear-gradient(#4ECDC4, #556270); }
+  background-image: url("img/pattern1_05.png"), linear-gradient(rgba(78, 205, 196, 0.8), #556270); }
 
 .container {
   max-width: 980px;
@@ -33,7 +33,7 @@ body {
 
 @media (max-width: 425px) {
   html {
-    font-size: 5.5px; }
+    font-size: 6px; }
     html .p_extend, html #aboutme .container > p:first-of-type, #aboutme html .container > p:first-of-type, html #skills .container p:first-of-type, #skills .container html p:first-of-type, html #portfolio .container > p:first-of-type, #portfolio html .container > p:first-of-type, html #contact p:first-of-type, #contact html p:first-of-type {
       font-size: 6rem; } }
 
@@ -189,12 +189,32 @@ header {
     height: 100%;
     line-height: 170%; }
 
-@media (max-width: 425px) {
+@media (max-width: 425px) and (min-width: 376px) {
   #aboutme .info p {
+    font-size: 2rem;
     padding: 20px;
     margin-bottom: 15px; }
   #aboutme .info .left_door p, #aboutme .info .right_door p {
-    line-height: 160%; } }
+    line-height: 295px;
+    font-size: 16rem; } }
+
+@media (max-width: 375px) and (min-width: 321px) {
+  #aboutme .info p {
+    font-size: 2rem;
+    padding: 20px;
+    margin-bottom: 15px; }
+  #aboutme .info .left_door p, #aboutme .info .right_door p {
+    line-height: 295px;
+    font-size: 16rem; } }
+
+@media (max-width: 320px) {
+  #aboutme .info p {
+    font-size: 2rem;
+    padding: 20px;
+    margin-bottom: 15px; }
+  #aboutme .info .left_door p, #aboutme .info .right_door p {
+    line-height: 355px;
+    font-size: 16rem; } }
 
 #skills .container {
   text-align: center; }
@@ -238,7 +258,8 @@ header {
     margin-bottom: 30px; }
   #skills .container .info {
     margin-top: 10px;
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    font-size: 2.5rem; }
   #skills .container .flex {
     margin-bottom: 40px; }
     #skills .container .flex > div {
@@ -342,7 +363,9 @@ header {
       #contact p:last-of-type {
         font-size: 6rem; }
       #contact button {
-        font-size: 4rem; } }
+        font-size: 4rem; }
+      #contact a:last-of-type {
+        font-size: 4.8rem; } }
 
 footer {
   border-top: 2px solid #50bcb7;
