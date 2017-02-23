@@ -277,8 +277,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
     padding: 20px 0; }
   #portfolio .flex > div {
     position: relative;
