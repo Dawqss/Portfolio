@@ -231,7 +231,8 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   font-size: 8rem;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  justify-content: center; }
 
 #skills .flex > div {
   width: 25%;
@@ -275,7 +276,10 @@ header {
   #portfolio .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px 0; }
   #portfolio .flex > div {
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
